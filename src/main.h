@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 Luckycoin Developers
+// Copyright (c) 2013 JebigaCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
@@ -33,9 +33,9 @@ static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const int64 MIN_TX_FEE = 10000000;
 static const int64 MIN_RELAY_TX_FEE = MIN_TX_FEE;
-static const int64 MAX_MONEY = 20000000 * COIN; // Luckycoin: maximum of 20M coins (given some randomness)
+static const int64 MAX_MONEY = 18800000 * COIN; // JebigaCoin: maximum of 20M coins (given some randomness)
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
-static const int COINBASE_MATURITY = 70;
+static const int COINBASE_MATURITY = 69;
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 #ifdef USE_UPNP
@@ -541,7 +541,7 @@ public:
     {
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
-        return dPriority > COIN * 1440 / 250; // Luckycoin: 1440 blocks found a day. Priority cutoff is 1 luckycoin day / 250 bytes.
+        return dPriority > COIN * 1440 / 250; // JebigaCoin: 1440 blocks found a day. Priority cutoff is 1 jebigacoin day / 250 bytes.
     }
 
     int64 GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=true, enum GetMinFee_mode mode=GMF_BLOCK) const

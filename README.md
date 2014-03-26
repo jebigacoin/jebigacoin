@@ -1,7 +1,7 @@
-Luckycoin Client v1.0.0
+JebigaCoin Client v1.0.0
 =======================
 
-Luckycoin - a fork of Litecoin version with random bonus blocks. Like Litecoin it uses scrypt as a proof of work scheme.
+JebigaCoin - a fork of Litecoin version with random bonus blocks. Like Litecoin it uses scrypt as a proof of work scheme.
 
    - 1 min block target
    - Difficulty retargets every 20 min with accelerated diff adjustment in the beginning
@@ -21,11 +21,11 @@ Luckycoin - a fork of Litecoin version with random bonus blocks. Like Litecoin i
     - 0.01% chance 58 times the normal coins
 
 
-Official Luckycoin Community Forum
+Official JebigaCoin Community Forum
 ==================================
 
-Please visit the official Luckycoin community forum for more information.
-https://cryptocointalk.com/forum/188-luckycoin-lky/
+Please visit the official JebigaCoin community forum for more information.
+https://cryptocointalk.com/forum/188-jebigacoin-JBG/
 
 
 Development process
