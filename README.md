@@ -1,32 +1,26 @@
 JebigaCoin Client v1.0.0
 =======================
 
-JebigaCoin - a fork of Litecoin version with random bonus blocks. Like Litecoin it uses scrypt as a proof of work scheme.
+JebigaCoin - a fork of Litecoin & Luckycoin version with random bonus blocks. Like Litecoin it uses scrypt as a proof of work scheme.
 
-   - 1 min block target
-   - Difficulty retargets every 20 min with accelerated diff adjustment in the beginning
-   - Initially 88 coins per block, halves every 2 months (100,000 blocks)
-   - Total around 20 millions coins
-   - connection port is 9917, RPC-port 9918
+Specs:
+- 1 min block target
+- Difficulty retargets every 240 min or 240 blocks
+- Initially 69 coins per block, halves every 2 years (1,036,800 blocks)
+- Total around 188 millions coins
+- connection port is 6970, RPC-port 6996
 
-   Random Super-blocks:
-    For the 1st 50000 blocks (1st month)
-    - 5% chances 188 coins/block
-    - 1% chances 588 coins/block
-    - 0.01% chances 5888 coins/block (so expect 5 such blocks)
-
-    After 50000 blocks
-    - 5% chances 2 times the normal coins (i.e. if normal is 88 coins, you get 176 coins)
-    - 1% chances 5 times the normal coins
-    - 0.01% chance 58 times the normal coins
+Random Super-blocks: (based on LKY)
+    For the 1st 50000 blocks
+     - 15% chances 169 coins/block
+     - 5% chances 6996 coins/block
+     - 0.01% chances 69996 coins/block (expect 5 such blocks)
 
 
-Official JebigaCoin Community Forum
-==================================
-
-Please visit the official JebigaCoin community forum for more information.
-https://cryptocointalk.com/forum/188-jebigacoin-JBG/
-
+After 50000 blocks
+    - 15% chances 2 times the normal coins (i.e. if normal is 69 coins, you get 138 coins)
+    - 5% chances 5 times the normal coins
+    - 0.01% chance 69 times the normal coins
 
 Development process
 ===================
