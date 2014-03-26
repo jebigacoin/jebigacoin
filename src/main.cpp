@@ -33,7 +33,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0x10197b518e1a08e358542cb36579f13abd23bacd8eebe8bd08a63b4e4180a29e");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // JebigaCoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2113,9 +2113,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1395828332;
+        block.nTime    = 1395835928;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 109594902;
+        block.nNonce   = 110038057;
 
         if (fTestNet)
         {
@@ -2131,7 +2131,7 @@ bool LoadBlockIndex(bool fAllowNew)
         assert(block.hashMerkleRoot == uint256("0xee867081f3449f97ed0c85a75d421de0e33171f161564ff529f30a5256a727cb"));
 
         // If genesis block hash does not match, then generate new genesis hash.
-        if (true && block.GetHash() != hashGenesisBlock)
+        if (false && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
